@@ -1,0 +1,3 @@
+﻿
+Google Material Design icons
+https://material.io/resources/icons

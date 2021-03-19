@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AxialisIconCollection>
+  <Name>Icons</Name>
+  <Icon>
+    <Name>info</Name>
+    <StockIconName>info.axvi</StockIconName>
+    <StockIconFamily>Google Material Design</StockIconFamily>
+    <StockIconSet>Action</StockIconSet>
+    <Colorize>#3E78B3</Colorize>
+    <StockOverlayName></StockOverlayName>
+    <StockOverlayPos>3</StockOverlayPos>
+    <ResourceIDValue>100</ResourceIDValue>
+    <ResourceID>ID_INFO</ResourceID>
+  </Icon>
+  <Icon>
+    <Name>tv-ok</Name>
+    <StockIconName>tv.axvi</StockIconName>
+    <StockIconFamily>Google Material Design</StockIconFamily>
+    <StockIconSet>Hardware</StockIconSet>
+    <ColorizeOverlay>#4DA07D</ColorizeOverlay>
+    <Colorize>#E9573E</Colorize>
+    <StockOverlayName>ok.axvi</StockOverlayName>
+    <StockOverlayPos>3</StockOverlayPos>
+    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceID>ID_TV-OK</ResourceID>
+  </Icon>
+  <Icon>
+    <Name>tv</Name>
+    <StockIconName>tv.axvi</StockIconName>
+    <StockIconFamily>Google Material Design</StockIconFamily>
+    <StockIconSet>Hardware</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <StockOverlayPos>3</StockOverlayPos>
+    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceID>ID_TV</ResourceID>
+  </Icon>
+  <Icon>
+    <Name>tv-tools</Name>
+    <StockIconName>tv.axvi</StockIconName>
+    <StockIconFamily>Google Material Design</StockIconFamily>
+    <StockIconSet>Hardware</StockIconSet>
+    <ColorizeOverlay>#3498DB</ColorizeOverlay>
+    <Colorize>#E9573E</Colorize>
+    <StockOverlayName>tools.axvi</StockOverlayName>
+    <StockOverlayPos>3</StockOverlayPos>
+    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceID>ID_TV-TOOLS</ResourceID>
+  </Icon>
+  <Icon>
+    <Name>language</Name>
+    <StockIconName>language.axvi</StockIconName>
+    <StockIconFamily>Google Material Design</StockIconFamily>
+    <StockIconSet>Action</StockIconSet>
+    <Colorize>#4DA07D</Colorize>
+    <StockOverlayName></StockOverlayName>
+    <StockOverlayPos>3</StockOverlayPos>
+    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceID>ID_LANGUAGE</ResourceID>
+  </Icon>
+</AxialisIconCollection>
