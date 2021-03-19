@@ -21,7 +21,7 @@
 ## Download
 
 Source: https://github.com/jackdp/Quick-Change-Resolution  
-Compiled binaries (Winows 32 and 64-bit): https://www.pazera-software.com/products/quick-change-resolution/
+Compiled binaries (Windows 32 and 64-bit): https://www.pazera-software.com/products/quick-change-resolution/
 
 ## Run-time parameters
 
@@ -66,4 +66,4 @@ To compile, just open `src/QuickChangeRes.dproj` file in Delphi, than select men
 
 ## Releases
 
-2021.03.13 - Version 1.0
+2021.03.19 - Version 1.0
