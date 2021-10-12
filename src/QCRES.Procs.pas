@@ -3,7 +3,7 @@ unit QCRES.Procs;
 interface
 
 uses
-  Windows,
+  Windows, ShellAPI,
   SysUtils, JPL.Conversion,
   QCRES.Types;
 
@@ -13,12 +13,17 @@ function ChangeDisplayResolution(const DisplayDeviceIndex, NewWidth, NewHeight: 
 procedure GetDisplayDeviceResolutions(const DeviceNo, BitsPerPixel: DWORD; var Arr: TResArray);
 function GetDisplayDeviceInfo(const DeviceHandle: THandle; var DeviceInfo: TDisplayDeviceInfo): Boolean;
 function TryGetRes(const s: string; out Width, Height: DWORD): Boolean;
+procedure GoToUrl(const URL: string);
 
 
 
 implementation
 
 
+procedure GoToUrl(const URL: string);
+begin
+  ShellExecute(0, 'open', PChar(URL), '', '', SW_SHOW);
+end;
 
 function TryGetRes(const s: string; out Width, Height: DWORD): Boolean;
 var

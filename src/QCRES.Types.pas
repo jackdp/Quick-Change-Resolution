@@ -18,9 +18,11 @@ const
   URL_GITHUB = 'https://github.com/jackdp/Quick-Change-Resolution';
   APP_LICENSE = 'Freeware. Open source';
 
-
   ENUM_CURRENT_SETTINGS  = DWORD(-1);
   ENUM_REGISTRY_SETTINGS = DWORD(-2);
+
+  EXIT_CODE_OK = 0;
+  EXIT_CODE_ERROR = 1;
 
 
 type
