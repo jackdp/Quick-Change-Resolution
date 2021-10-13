@@ -223,7 +223,7 @@ object FormMain: TFormMain
     Left = 215
     Top = 67
     Width = 154
-    Height = 61
+    Height = 72
     Action = actSetSelectedResolution
     Caption = 'Set resolution'
     Font.Charset = DEFAULT_CHARSET
@@ -261,7 +261,7 @@ object FormMain: TFormMain
     Appearance.Normal.Gradient.ColorFrom = 16053492
     Appearance.Normal.Gradient.ColorTo = 15658734
     Appearance.Normal.BorderToGradientMargin = 0
-    Appearance.Normal.SubCaptionColor = clBlack
+    Appearance.Normal.SubCaptionColor = 14247949
     Appearance.Hot.Border.Color = 11632444
     Appearance.Hot.Color = 16705487
     Appearance.Hot.Font.Charset = DEFAULT_CHARSET
@@ -273,7 +273,7 @@ object FormMain: TFormMain
     Appearance.Hot.Gradient.ColorFrom = 16705487
     Appearance.Hot.Gradient.ColorTo = 16702908
     Appearance.Hot.BorderToGradientMargin = 0
-    Appearance.Hot.SubCaptionColor = clBlack
+    Appearance.Hot.SubCaptionColor = 14247949
     Appearance.Down.Border.Color = 5849118
     Appearance.Down.Color = 16702392
     Appearance.Down.Font.Charset = DEFAULT_CHARSET
@@ -285,7 +285,7 @@ object FormMain: TFormMain
     Appearance.Down.Gradient.ColorFrom = 16702392
     Appearance.Down.Gradient.ColorTo = 16699813
     Appearance.Down.BorderToGradientMargin = 0
-    Appearance.Down.SubCaptionColor = clBlack
+    Appearance.Down.SubCaptionColor = 14247949
     Appearance.Disabled.Border.Color = 11907757
     Appearance.Disabled.Color = 16053492
     Appearance.Disabled.Font.Charset = DEFAULT_CHARSET
@@ -310,22 +310,24 @@ object FormMain: TFormMain
     Appearance.Focused.Gradient.ColorFrom = 15856113
     Appearance.Focused.Gradient.ColorTo = 13619151
     Appearance.Focused.GradientEnabled = False
+    Appearance.Focused.SubCaptionColor = 14247949
     Appearance.FocusRect.FocusType = frtCustom
     Appearance.FocusRect.Pen.Color = 14910737
     Appearance.FocusRect.Spacing = 1
     Appearance.BorderWhenDefault.Color = 13675044
     Appearance.SubCaptionFont.Charset = DEFAULT_CHARSET
     Appearance.SubCaptionFont.Color = clWindowText
-    Appearance.SubCaptionFont.Height = -11
+    Appearance.SubCaptionFont.Height = -12
     Appearance.SubCaptionFont.Name = 'Tahoma'
     Appearance.SubCaptionFont.Style = []
+    Appearance.SubCaption = 'F9'
     Appearance.CaptionsMargin = 3
     AnchoredControls.Bottom.Control = chPermanent
     AnchoredControls.Bottom.Spacing = 14
   end
   object chPermanent: TJPJvCheckBox
     Left = 215
-    Top = 142
+    Top = 153
     Width = 79
     Height = 17
     Hint = 
@@ -345,7 +347,7 @@ object FormMain: TFormMain
   end
   object rbCurrentUser: TJPJvRadioButton
     Left = 225
-    Top = 162
+    Top = 173
     Width = 124
     Height = 17
     Alignment = taLeftJustify
@@ -358,7 +360,7 @@ object FormMain: TFormMain
   end
   object rbAllUsers: TJPJvRadioButton
     Left = 225
-    Top = 182
+    Top = 193
     Width = 83
     Height = 17
     Alignment = taLeftJustify
@@ -526,7 +528,7 @@ object FormMain: TFormMain
     AnchoredControls.Left.Spacing = 8
   end
   object btnLang: TJppBasicPngButtonEx
-    Left = 220
+    Left = 222
     Top = 433
     Width = 28
     Height = 25
@@ -623,6 +625,7 @@ object FormMain: TFormMain
     end
     object actSetSelectedResolution: TAction
       Caption = 'Set resolution'
+      ShortCut = 120
       OnExecute = actSetSelectedResolutionExecute
     end
     object actExit: TAction

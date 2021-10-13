@@ -79,6 +79,7 @@ type
     procedure actAboutExecute(Sender: TObject);
     procedure actShowLangMenuExecute(Sender: TObject);
     procedure actUpdateLangMenuExecute(Sender: TObject);
+    procedure FixMainWindowPos;
   private
   public
   end;
@@ -247,7 +248,6 @@ begin
   lv.Columns[2].Caption := sHeight;
   dlblCurrentWidth.Caption := sWidth + ':';
   dlblCurrentHeight.Caption := sHeight + ':';
-
 end;
 
 procedure TFormMain.UpdateLangMenu;
@@ -292,7 +292,6 @@ begin
   end;
 
   SetLang;
-  //FormAbout.SetLang;
 end;
 
 procedure TFormMain.actShowLangMenuExecute(Sender: TObject);
@@ -386,11 +385,19 @@ begin
   xWidth := stoi(RemoveSpaces(li.SubItems[0]));
   xHeight := stoi(RemoveSpaces(li.SubItems[1]));
 
-  //ShowMessage(itos(xWidth) + ' x ' + itos(xHeight));
-
   ChangeDisplayResolution(0, xWidth, xHeight, chPermanent.Checked, rbAllUsers.Checked);
+  FixMainWindowPos;
 
   GetResolutions(0);
+end;
+
+procedure TFormMain.FixMainWindowPos;
+begin
+  if
+    (Left < 0) or (Left > Screen.Width - Width) or
+    (Top < 0) or (Top > Screen.Height - Height)
+  then
+    CenterForm(Self);
 end;
 
 
@@ -409,6 +416,7 @@ begin
     Ini.CurrentSection := 'MAIN';
 
     Ini.ReadFormPos(Self);
+    FixMainWindowPos;
 
     actEsc.Enabled := Ini.ReadBool('EscExit', False);
 
@@ -499,7 +507,7 @@ begin
 
   if Length(sHeight) > 3 then
   begin
-    //li.Brush.Color := RGB(255,250,205);
+    // Bold font when Height > 999, so that the user can quickly distinguish between higher and low resolutions.
     li.Font.Style := [fsBold];
   end;
 
