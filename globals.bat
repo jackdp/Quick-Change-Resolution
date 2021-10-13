@@ -2,7 +2,7 @@
 
 rem --------------- common -----------------
 set AppName=QuickChangeResolution
-set AppVer=1.0
+set AppVer=1.1
 set AppFullName=%AppName% %AppVer%
 set AppName_=QuickChangeResolution
 set AppExe=QuickChangeResolution.exe
