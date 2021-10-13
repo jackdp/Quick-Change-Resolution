@@ -1,14 +1,14 @@
-﻿# QuickChangeResolution
+# QuickChangeResolution
 
-- [QuickChangeResolution](#quickchangeresolution)
-  - [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Download](#download)
-  - [Run-time parameters](#run-time-parameters)
-  - [License](#license)
-  - [Note](#note)
-  - [Compilation](#compilation)
-  - [Releases](#releases)
+* [QuickChangeResolution](#quickchangeresolution)
+  * [Overview](#overview)
+  * [Screenshot](#screenshot)
+  * [Download](#download)
+  * [Run-time parameters](#run-time-parameters)
+  * [License](#license)
+  * [Note](#note)
+  * [Compilation](#compilation)
+  * [Releases](#releases)
 
 ## Overview
 
@@ -20,18 +20,19 @@
 
 ## Download
 
-Source: https://github.com/jackdp/Quick-Change-Resolution  
-Compiled binaries (Windows 32 and 64-bit): https://www.pazera-software.com/products/quick-change-resolution/
+Source: <https://github.com/jackdp/Quick-Change-Resolution>  
+Compiled binaries (Windows 32 and 64-bit): <https://www.pazera-software.com/products/quick-change-resolution/>
 
 ## Run-time parameters
 
-| Parameter                   | Description                                                            |
-|-----------------------------|------------------------------------------------------------------------|
-| `-lo`, `--list-options`     | Lists available options (parameters).                                  |
-| `-lr`, `--list-resolutions` | Lists available resolutions.                                           |
-| `-r`, `--set-resolution`    | Sets the given resolution.                                             |
-| `-u`, `--user`              | Writes a new resolution to the system registry (for the current user). |
-| `-a`, `--all`               | Writes a new resolution to the system registry (for all users).        |
+|        Parameter         |                                                 Description                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| `-r`, `--set-resolution` | Sets the given resolution.                                                                                   |
+| `-u`, `--user`           | Writes a new resolution to the system registry (for the current user).                                       |
+| `-a`, `--all`            | Writes a new resolution to the system registry (for all users).                                              |
+| `--home`                 | Open program home page in the default browser.                                                               |
+| `--github`               | Open source code repository on the GitHub.                                                                   |
+| `-h`, `--help`           | Lists the available options, current resolution, and a list of resolutions supported by the current monitor. |
 
 **Examples**
 
@@ -56,14 +57,22 @@ You need [Delphi XE2](https://www.embarcadero.com/products/delphi) or newer (the
 
 You also need to install the following packages/components:
 
-- JPLib: https://github.com/jackdp/JPLib
-- JPPack: https://github.com/jackdp/JPPack
-- JPModLib: https://github.com/jackdp/JPModLib
-- JVCL: https://github.com/project-jedi/jvcl
-- DzHTMLText2: https://github.com/jackdp/DzHTMLText2
+* JPLib: <https://github.com/jackdp/JPLib>
+* JPPack: <https://github.com/jackdp/JPPack>
+* JPModLib: <https://github.com/jackdp/JPModLib>
+* JVCL: <https://github.com/project-jedi/jvcl>
+* DzHTMLText2: <https://github.com/jackdp/DzHTMLText2>
 
 To compile, just open `src/QuickChangeRes.dproj` file in Delphi, than select menu **Project** -> **Build**.
 
 ## Releases
 
-2021.03.19 - Version 1.0
+### Version 1.1 - 2021.10.13
+
+* Displaying more detailed information when the program is run from the command line (thanks to [RicoLeNecro](https://github.com/RicoLeNecro)).
+* Correcting the position of the main window so that it is visible after changing the resolution and after starting the program (thanks to RicoLeNecro).
+* Added `F9` hotkey to change resolution.
+
+### Version 1.0 - 2021.03.19
+
+First release

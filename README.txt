@@ -1,7 +1,7 @@
 ﻿Program name: QuickChangeResolution (32/64-bit)
-Version: 1.0
+Version: 1.1
 License: Freeware, Open Source
-Release date: 2021.03.19
+Release date: 2021.10.13
 Author: Jacek Pazera
 Web page: https://www.pazera-software.com/products/quick-change-resolution/
 Source: https://github.com/jackdp/Quick-Change-Resolution

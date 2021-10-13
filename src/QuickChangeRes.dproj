@@ -14,48 +14,48 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
-        <Base>true</Base>
-        <CfgParent>Base</CfgParent>
         <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
-        <Base>true</Base>
-        <CfgParent>Base</CfgParent>
         <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
-        <Base>true</Base>
-        <CfgParent>Base</CfgParent>
         <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
-        <Base>true</Base>
+        <Cfg_1_Win32>true</Cfg_1_Win32>
         <CfgParent>Cfg_1</CfgParent>
         <Cfg_1>true</Cfg_1>
-        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
-        <Base>true</Base>
+        <Cfg_1_Win64>true</Cfg_1_Win64>
         <CfgParent>Cfg_1</CfgParent>
         <Cfg_1>true</Cfg_1>
-        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
-        <Base>true</Base>
-        <CfgParent>Base</CfgParent>
         <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
-        <Base>true</Base>
+        <Cfg_2_Win32>true</Cfg_2_Win32>
         <CfgParent>Cfg_2</CfgParent>
         <Cfg_2>true</Cfg_2>
-        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
-        <Base>true</Base>
+        <Cfg_2_Win64>true</Cfg_2_Win64>
         <CfgParent>Cfg_2</CfgParent>
         <Cfg_2>true</Cfg_2>
-        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
         <DCC_DebugInformation>true</DCC_DebugInformation>
@@ -91,20 +91,22 @@
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
         <DCC_DcuOutput>..\dcu32</DCC_DcuOutput>
         <DCC_ExeOutput>..\</DCC_ExeOutput>
         <Icon_MainIcon>..\img\Main.ico</Icon_MainIcon>
         <OutputExt>32.exe</OutputExt>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>FileVersion=1.0.0.0;ProductName=QuickChangeResolution;ProductVersion=1.0.0.0;CompanyName=Jacek Pazera;LegalCopyright=Jacek Pazera;LegalTrademarks=Jacek Pazera;FileDescription=QuickChangeResolution;InternalName=QuickChangeResolution;Comments=https://www.pazera-software.com;OriginalFilename=QuickChangeRes.exe</VerInfo_Keys>
+        <VerInfo_Keys>FileVersion=1.1.0.0;ProductName=QuickChangeResolution;ProductVersion=1.1.0.0;CompanyName=Jacek Pazera;LegalCopyright=Jacek Pazera;LegalTrademarks=Jacek Pazera;FileDescription=QuickChangeResolution;InternalName=QuickChangeResolution;Comments=https://www.pazera-software.com;OriginalFilename=QuickChangeRes.exe</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
         <DCC_DcuOutput>..\dcu64</DCC_DcuOutput>
         <DCC_ExeOutput>..\</DCC_ExeOutput>
         <Icon_MainIcon>..\img\Main.ico</Icon_MainIcon>
         <OutputExt>64.exe</OutputExt>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>FileVersion=1.0.0.0;ProductName=QuickChangeResolution;ProductVersion=1.0.0.0;CompanyName=Jacek Pazera;LegalCopyright=Jacek Pazera;LegalTrademarks=Jacek Pazera;FileDescription=QuickChangeResolution;InternalName=QuickChangeResolution;Comments=https://www.pazera-software.com;OriginalFilename=QuickChangeRes.exe</VerInfo_Keys>
+        <VerInfo_Keys>FileVersion=1.1.0.0;ProductName=QuickChangeResolution;ProductVersion=1.1.0.0;CompanyName=Jacek Pazera;LegalCopyright=Jacek Pazera;LegalTrademarks=Jacek Pazera;FileDescription=QuickChangeResolution;InternalName=QuickChangeResolution;Comments=https://www.pazera-software.com;OriginalFilename=QuickChangeRes.exe</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
@@ -127,15 +129,15 @@
         <DCCReference Include="QCRES.MemIniFile.Helper.pas"/>
         <DCCReference Include="QCRES.FormAbout.pas"/>
         <DCCReference Include="QCRES.AppStrings.pas"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
         <BuildConfiguration Include="Release">
             <Key>Cfg_1</Key>
-            <CfgParent>Base</CfgParent>
-        </BuildConfiguration>
-        <BuildConfiguration Include="Debug">
-            <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
         </BuildConfiguration>
     </ItemGroup>
@@ -198,12 +200,13 @@
                     <VersionInfoKeys Name="theme"/>
                 </VersionInfoKeys>
                 <Excluded_Packages>
+                    <Excluded_Packages Name="E:\Program Files (x86)\FastReports\LibD19\dclfrx19.bpl">FastReport 4.0 Components</Excluded_Packages>
+                    <Excluded_Packages Name="E:\Program Files (x86)\FastReports\LibD19\dclfrxDB19.bpl">FastReport 4.0 DB Components</Excluded_Packages>
+                    <Excluded_Packages Name="E:\Program Files (x86)\FastReports\LibD19\dclfrxe19.bpl">FastReport 4.0 Exports</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\12.0\Bpl\dclCnPack_DXE5.bpl">CnPack Components Designtime Package</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k190.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp190.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\12.0\Bpl\FlatStyle_D7.bpl">File C:\Users\Public\Documents\RAD Studio\12.0\Bpl\FlatStyle_D7.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="E:\Program Files (x86)\FastReports\LibD19\dclfrx19.bpl">File E:\Program Files (x86)\FastReports\LibD19\dclfrx19.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="E:\Program Files (x86)\FastReports\LibD19\dclfrxDB19.bpl">File E:\Program Files (x86)\FastReports\LibD19\dclfrxDB19.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="E:\Program Files (x86)\FastReports\LibD19\dclfrxe19.bpl">File E:\Program Files (x86)\FastReports\LibD19\dclfrxe19.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\12.0\Bpl\JclRepositoryExpert190.bpl">JCL Package containing repository wizards</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
