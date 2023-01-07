@@ -1,0 +1,55 @@
+;-------------------------------------------------------
+;  UTF-8 Encoding with BOM
+;-------------------------------------------------------
+;  All lines starting with ";" (semicolon) are comments.
+;-------------------------------------------------------
+;  %s - placeholder for string
+;  \n - placeholder for a newline
+;-------------------------------------------------------
+;  Prefixes:
+;    lbl - Label
+;    dlbl - DoubleLabel
+;    gb - GroupBox
+;    ch - CheckBox
+;    rb - RadioButton
+;    act - Action (can be assigned to buttons, menu items, etc.)
+;    btn - Button
+;    sbtn - SpeedButton
+;    ed - Edit
+;    cb - ComboBox
+;    ccb - ColorComboBox
+;    csw - ColorSwatch
+;    ud - UpDown
+;    sped - SpinEdit
+;    mnu - Menu
+;    pn - Panel
+;-------------------------------------------------------
+
+[APP]
+AppName=QuickChangeResolution
+AppVersion=1.0
+
+[INFO]
+LangName_InEnglish=Korean
+LangName_Native=한국어 (번역: 비너스걸💋)
+Translator=VenusGirl
+TranslatorUrl=https://venusgirls.tistory.com
+TranslatorEmail=venusgirl@outlook.com
+TranslationDate=2021.03.18
+
+
+[MAIN]
+No=번호
+Width=너비
+Height=높이
+lblAvailableResolutions.Caption=사용 가능한 해상도
+lblCurrentResolution.Caption=현재 해상도
+lblInfo.Caption=목록에서 원하는 해상도를 선택하고 아래 버튼을 클릭하십시오
+actSetSelectedResolution.Caption=해상도 설정
+actAbout.Hint=정보...
+actExit.Caption=종료
+chPermanent.Caption=영구적
+chPermanent.Hint=이 옵션을 선택하면 새 해상도가 시스템 레지스트리에 저장됩니다.\n선택하지 않으면 새 해상도는 <b>현재 세션</b>에만 유효합니다.
+rbCurrentUser.Caption=현재 사용자
+rbAllUsers.Caption=모든 사용자
+actShowLangMenu.Hint=언어...
